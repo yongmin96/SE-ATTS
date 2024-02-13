@@ -9,6 +9,31 @@
       #Audio-Samples {text-align: center; font-family: arial;}
       #Audio-Samples-detail {text-align: center; font-weight: normal; font-size: 17px; font-family: arial;}
       #sample-1 {text-align: center; font-family: arial;}
+
+      .container {
+        width: 70%;
+        height: 70%;
+        margin: 40px auto;
+        background: red;
+      }
+      .outer {
+        display: table;
+        width: 100%;
+        height: 100%;
+      }
+      .inner {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+      }
+      .centered {
+        position: relative;
+        display: inline-block;
+        width: 50%;
+        padding: 1em;
+        background: orange;
+        color: white;
+      }
       
     </style>
   </head>
@@ -31,6 +56,26 @@
       synthesis quality with limited speaker data, marking a significant step forward in addressing the challenges<br />
       of data-intensive TTS model training.<br />
     </p>
+
+    <div class="container">
+      <div class="outer">
+        <div class="inner">
+          <div class="centered">
+            Adaptive text-to-speech (ATTS) aims to adapt a source TTS model to synthesize a new target speaker's speech
+            using few speech data based on finetuning. However, the adaptive text-to-speech based on finetuning typically
+            requires several hours of high-quality speech per new target speakers and may also negatively impact the
+            quality of speech synthesis for previously learned multi-speakers. In this paper, we propose an efficient few
+            data adaptation TTS using a style equalizer module (SE-ATTS). In the proposed SE-ATTS, the style of
+            new speaker to be synthesized is learned through the style characteristics of other speakers. This approach
+            becomes key to mitigating the two issues in adaptive TTS mentioned above. Our experiments on datasets of
+            Brand Engagement Network Company demonstrate the effectiveness of SE-ATTS method against existing
+            methods through subjective metrics. By integrating the style equalizer, SE-ATTS achieves remarkable speech
+            synthesis quality with limited speaker data, marking a significant step forward in addressing the challenges
+            of data-intensive TTS model training.<br />
+          </div>
+        </div>
+      </div>
+    </div>
 
     <h2 id="Audio-Samples"><br /><br />Audio Samples</h2>
     <p id="Audio-Samples-detail"><br />All the audio sample use HiFi-GAN as a vocoder.</p>
