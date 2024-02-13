@@ -5,7 +5,6 @@
       #title {text-align: center; font-family: arial;}
       #authors {text-align: center; font-style: italic; font-size: 19px; font-family: arial;}
       #abstract {text-align: center; font-family: arial;}
-      #abstract-detail {text-align: left; margin-left: 550px; font-weight: normal; font-size: 17px; font-family: arial;}
       #Audio-Samples {text-align: center; font-family: arial;}
       #Audio-Samples-detail {text-align: center; font-weight: normal; font-size: 17px; font-family: arial;}
       #sample-1 {text-align: center; font-family: arial;}
@@ -18,6 +17,9 @@
         position: relative;
         display: inline-block;
         padding: 1em;
+        font-weight: normal;
+        font-size: 17px;
+        font-family: arial;
       }
       
     </style>
@@ -28,20 +30,6 @@
     <p id="authors">Yongmin Kim, Kyungseok Oh, Jeongki Min, Junyeop Lee, Bonhwa Ku, and Hanseok Ko</p>
 
     <h2 id="abstract"><br /><br />Abstract</h2>
-    <p id="abstract-detail"><br />
-      Adaptive text-to-speech (ATTS) aims to adapt a source TTS model to synthesize a new target speaker's speech<br />
-      using few speech data based on finetuning. However, the adaptive text-to-speech based on finetuning typically<br />
-      requires several hours of high-quality speech per new target speakers and may also negatively impact the<br />
-      quality of speech synthesis for previously learned multi-speakers. In this paper, we propose an efficient few<br />
-      data adaptation TTS using a style equalizer module (SE-ATTS). In the proposed SE-ATTS, the style of<br />
-      new speaker to be synthesized is learned through the style characteristics of other speakers. This approach<br />
-      becomes key to mitigating the two issues in adaptive TTS mentioned above. Our experiments on datasets of<br />
-      Brand Engagement Network Company demonstrate the effectiveness of SE-ATTS method against existing<br />
-      methods through subjective metrics. By integrating the style equalizer, SE-ATTS achieves remarkable speech<br />
-      synthesis quality with limited speaker data, marking a significant step forward in addressing the challenges<br />
-      of data-intensive TTS model training.<br />
-    </p>
-
     <div class="container">
       <div class="centered">
         Adaptive text-to-speech (ATTS) aims to adapt a source TTS model to synthesize a new target speaker's speech
