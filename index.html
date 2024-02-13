@@ -181,6 +181,32 @@
     </div>
 
     <h3 class="sample"><br /><br />Comparison According to Data Size of Pre-Trained Model</h3>
+
+    <div class="container-sample1">
+      <div class="centered-sample1">
+        <p class="sample1">Text: At least thirty one Latin American nationals are among those still unaccounted for.</p>
+        <table>
+          <thead>
+            <tr>
+              <th> </th>
+              <th>Grond Truth</th>
+              <th>SE-ATTS(24spk)*</th>
+              <th>SE-ATTS(73spk)*</th>
+              <th>SE-ATTS(24spk)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/GT/spk136_F_0020.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/2spk/model_A/spk136_F_0020.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/2spk/model_B/spk136_F_0020.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/2spk/model_C/spk136_F_0020.wav" />&lt;/source&gt; </audio></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="grey">* w/o style eqaulizer.</p>
+      </div>
+    </div>
     
   </body>
 </html>
